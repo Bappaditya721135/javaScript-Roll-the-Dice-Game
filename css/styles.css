@@ -10,4 +10,64 @@ body{
     font-family: 'Nunito', sans-serif;
     min-height: 100vh;
     background: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This is the main section  */
+.main-container{
+    max-width: 1200px;
+    min-height: 600px;
+    background-color: lightblue;
+    display: flex;
+    border-radius: 20px;
+
+}
+
+.player{
+    padding: 64px 80px;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* gap: 16rem; */
+    justify-content: space-between;
+    /* border-radius: 20px; */
+}
+
+.score{
+    font-size: 4rem;
+}
+.current-score-container{
+background-color: red;
+color: white;
+padding: 16px;
+border-radius: 5px;
+}
+/* buttons  */
+.btn{
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    border: none;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: rgb(233, 70, 97);
+    color: white;
+}
+.new-game-btn{
+    top: 20%;
+}
+.roll-dice-btn{
+    top: 65%;
+}
+.hold-btn{
+    top: 73%;
 }
