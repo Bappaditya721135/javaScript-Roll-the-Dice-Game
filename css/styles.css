@@ -19,7 +19,7 @@ body{
 .main-container{
     max-width: 1200px;
     min-height: 600px;
-    background-color: lightblue;
+    background-color: #0077b6;
     display: flex;
     border-radius: 20px;
 
@@ -27,6 +27,7 @@ body{
 
 .player{
     padding: 64px 80px;
+    color: white;
     font-size: 2rem;
     text-align: center;
     display: flex;
@@ -36,11 +37,26 @@ body{
     /* border-radius: 20px; */
 }
 
+img{
+    background-size: cover;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    /* display: none; */
+}
+
+.player-1{
+    border-radius: 20px 0 0 20px;
+}
+
+.player-2{
+    border-radius: 0 20px 20px 0;
+}
 .score{
     font-size: 4rem;
 }
 .current-score-container{
-background-color: red;
+background-color: #ff006e;
 color: white;
 padding: 16px;
 border-radius: 5px;
@@ -54,8 +70,25 @@ border-radius: 5px;
     padding: 5px 15px;
     border-radius: 30px;
     font-size: 1.2rem;
+    /* font:1.2rem; */
     border: none;
-    transition: .5s;
+    transition: .3s;
+    display: inline-block;
+}
+.btn:active{
+    transform: translate(-50%,5px);
+}
+.not-active{
+    display: none;
+}
+.dice{
+    width: 100px;
+    height: 100px;
+    /* background-color: blue; */
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
 }
 
 .btn:hover{
@@ -70,4 +103,16 @@ border-radius: 5px;
 }
 .hold-btn{
     top: 73%;
+}
+
+/* This code section is when a player is active  */
+.active{
+    /* width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5; */
+    background-color: #110f0f;
+    opacity: 0.3;
+    color: #423d3d;
+    /* border-radius: inherit; */
 }
