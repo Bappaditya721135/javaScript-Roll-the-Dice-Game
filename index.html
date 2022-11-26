@@ -23,13 +23,13 @@
             </div>
             <div class="current-score-container">
                 <p>CURRENT</p>
-                <div class="current-score">0</div>
+                <div id="current-1" class="current-score">0</div>
             </div>
         </div>
 
         <!-- player 2 section  -->
 
-        <div class="player-2 player">
+        <div class="player-2 player active">
             <div class="player-score-section">
                 <h2>PLAYER 2</h2>
                 <!-- player's score  -->
@@ -37,8 +37,16 @@
             </div>
             <div class="current-score-container">
                 <p>CURRENT</p>
-                <div class="current-score">0</div>
+                <div id="current-2" class="current-score">0</div>
             </div>
+        </div>
+        <div class="dice">
+            <img class="not-active" src="./img/dice-1.png" alt="dice1" data-img="1">
+            <img class="not-active" src="./img/dice-2.png" alt="dice2" data-img="2">
+            <img class="not-active" src="./img/dice-3.png" alt="dice3" data-img="3">
+            <img class="not-active" src="./img/dice-4.png" alt="dice4" data-img="4">
+            <img class="not-active" src="./img/dice-5.png" alt="dice5" data-img="5">
+            <img class="not-active" src="./img/dice-6.png" alt="dice6" data-img="6">
         </div>
         <button class="new-game-btn btn">
             🚗
@@ -52,6 +60,9 @@
             <i class="fa-solid fa-plus"></i>
             Hold
         </button>
+
+        <!-- script js  -->
+        <script src="./js/scripts.js"></script>
     </div>
 </body>
 
