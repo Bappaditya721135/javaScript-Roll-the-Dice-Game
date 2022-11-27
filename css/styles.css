@@ -52,7 +52,8 @@ img{
 .player-1{
     border-radius: 0 20px 20px 0;
 }
-.score{
+.score-0,
+.score-1 {
     font-size: 4rem;
 }
 .current-score-container{
@@ -115,4 +116,9 @@ border-radius: 5px;
     opacity: 0.3;
     color: #423d3d;
     /* border-radius: inherit; */
+}
+
+.winner {
+    background-color: rgb(38, 21, 21);
+    color: red;
 }
